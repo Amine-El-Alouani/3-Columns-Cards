@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+.columns {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.container>.col {
+    color: hsl(0, 0%, 95%);
+    padding: 65px;
+}
+
+.container>.col>h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 40px;
+    margin: 35px 0;
+}
+
+.container>.col>p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 25px;
+    font-size: 15px;
+    margin-bottom: 90px;
+}
+
+.container>.col>button {
+    padding: 13px 28px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.container>.col>button:hover {
+    padding: 11px 26px;
+    background-color: transparent;
+    color: hsl(0, 0%, 95%) !important;
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.container>.col:nth-child(1) {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.container>.col:nth-child(1)>button {
+    color: hsl(31, 77%, 52%);
+}
+
+.container>.col:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.container>.col:nth-child(2)>button {
+    color: hsl(184, 100%, 22%);
+}
+
+.container>.col:nth-child(3) {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.container>.col:nth-child(3)>button {
+    color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 748px) {
+    .container {
+        width: 80%;
+        height: 100%;
+        flex-direction: column;
+    }
+    .columns {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .container>.col{
+        padding: 55px;
+    }
+
+    .container>.col:nth-child(1) {
+        border-radius: 10px 10px 0 0;
+        margin-top: 80px;
+    }
+
+    .container>.col:nth-child(3) {
+        border-radius: 0 0 10px 10px;
+        margin-bottom: 80px;
+    }
+
+    .container>.col>p{
+        margin-bottom: 50px;
+    }
+}
